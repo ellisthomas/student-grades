@@ -24,7 +24,33 @@ var grade = [ ];
 for (var i = 0; i < scores.length; i++) {
  if (scores[i] >= 50 && scores[i] <=60) {
  	grade.push("F");
- 	
- } 
+ 	gradeF ++;
+}  else if (scores[i] >=61 && scores[i] <= 70 ) {
+		grade.push ("D");
+		gradeD ++;	
+ } else if (scores[i] >=71 && scores[i] <= 80 ) {
+		grade.push ("C");
+		gradeC ++;
+ } else if (scores[i] >=81 && scores[i] <= 90 ) {
+		grade.push ("B");
+		gradeB ++;
+}  else if (scores[i] >=91 && scores[i] <= 100 ) {
+		grade.push ("A");
+		gradeA ++;
 }
+
+}
+
 console.log("grade", grade);
+console.log("Number of F's",gradeF);
+console.log("Number of D's",gradeD);
+console.log("Number of C's",gradeC);
+console.log("Number of B's",gradeB);
+console.log("Number of A's",gradeA);
+
+
+
+
+
+
+
